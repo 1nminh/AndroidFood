@@ -5,24 +5,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class FoodActivity extends AppCompatActivity {
+public class FoodDetailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food);
+        setContentView(R.layout.activity_food_detail);
     }
 
     public void backToLast(View view) {
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this,FoodActivity.class);
         startActivity(intent);
     }
 
-    public void goToDetail(View view) {
-        Intent intent = new Intent(this,FoodDetailActivity.class);
+    public void toTrackPage(View view) {
+
+        Intent intent = new Intent(this,OderTrackingActivity.class);
         startActivity(intent);
+
     }
-
-
-
 }
