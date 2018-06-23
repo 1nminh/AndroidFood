@@ -7,16 +7,18 @@
 
         <item
             android:id="@+id/nav_category_layout"
-            android:icon="@drawable/ic_menu_send"
-            android:title="Category" />
-        <!--<item-->
-            <!--android:id="@+id/nav_featured_layout"-->
-            <!--android:icon="@drawable/ic_menu_gallery"-->
-            <!--android:title="Featured" />-->
+            android:icon="@drawable/foodblack"
+            android:title="Thực Đơn" />
+
         <item
             android:id="@+id/nav_datetime_layout"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Date Time" />
+            android:icon="@drawable/timeblack"
+            android:title="Bữa Ăn Hàng Ngày" />
+
+        <item
+        android:id="@+id/nav_ordertracking_layout"
+        android:icon="@drawable/cartblack"
+        android:title="Theo Dõi Đơn Hàng" />
 
     </group>
 

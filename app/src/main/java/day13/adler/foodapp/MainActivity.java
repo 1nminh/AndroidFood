@@ -108,10 +108,13 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         FragmentManager fragmentManager = getFragmentManager();
 
-        if (id == R.id.nav_datetime_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new datetimeFragment()).commit();
-        }  else if (id == R.id.nav_category_layout) {
+        if (id == R.id.nav_category_layout) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new categoryFragment()).commit();
+        }  else if (id == R.id.nav_datetime_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new datetimeFragment()).commit();
+        }   else if (id == R.id.nav_ordertracking_layout) {
+            Intent intent = new Intent(this, OderTrackingActivity.class);
+            startActivity(intent);
         }
 
 

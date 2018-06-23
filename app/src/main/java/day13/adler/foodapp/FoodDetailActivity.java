@@ -24,4 +24,11 @@ public class FoodDetailActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void toHomePage(View view) {
+
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+
+    }
 }

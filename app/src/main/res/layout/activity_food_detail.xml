@@ -24,22 +24,33 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/backarrow"
+                    android:background="@drawable/goback"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="20dp"
                     android:onClick="backToLast"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center|right"
-                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
                     >
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/cartbuy"
+                        android:background="@drawable/homeicon"
+                        android:onClick="toHomePage"
+                        android:layout_marginRight="20dp"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cartpink"
                         android:onClick="toTrackPage"
                         />
                 </LinearLayout>
@@ -127,8 +138,9 @@ Như vậy là bạn đã hoàn thành món thịt ba chỉ kho mặn ngọt, ng
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Oder"
-                        android:textSize="20dp"
+                        android:padding="5dp"
+                        android:text="Đặt Món Ăn"
+                        android:textSize="15dp"
                         android:textAlignment="center"
                         android:background="@drawable/roundbutton"
                         android:textColor="#ffffff"

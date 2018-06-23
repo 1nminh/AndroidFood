@@ -16,4 +16,10 @@ public class OderTrackingActivity extends AppCompatActivity {
     public void backToLast(View view) {
         super.onBackPressed();
     }
+
+    public void toHomePage(View view) {
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+
+    }
 }
