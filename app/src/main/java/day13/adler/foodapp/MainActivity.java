@@ -2,6 +2,7 @@ package day13.adler.foodapp;
 
 import android.app.FragmentManager;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -107,11 +108,9 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         FragmentManager fragmentManager = getFragmentManager();
 
-        if (id == R.id.nav_featured_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new featuredFragment()).commit();
-        } else if (id == R.id.nav_datetime_layout) {
+        if (id == R.id.nav_datetime_layout) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new datetimeFragment()).commit();
-        } else if (id == R.id.nav_category_layout) {
+        }  else if (id == R.id.nav_category_layout) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new categoryFragment()).commit();
         }
 

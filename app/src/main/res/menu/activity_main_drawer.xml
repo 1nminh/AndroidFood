@@ -9,10 +9,10 @@
             android:id="@+id/nav_category_layout"
             android:icon="@drawable/ic_menu_send"
             android:title="Category" />
-        <item
-            android:id="@+id/nav_featured_layout"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Featured" />
+        <!--<item-->
+            <!--android:id="@+id/nav_featured_layout"-->
+            <!--android:icon="@drawable/ic_menu_gallery"-->
+            <!--android:title="Featured" />-->
         <item
             android:id="@+id/nav_datetime_layout"
             android:icon="@drawable/ic_menu_slideshow"

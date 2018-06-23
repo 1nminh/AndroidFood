@@ -21,6 +21,7 @@
         android:fitsSystemWindows="true"
         app:itemIconTint="@drawable/drawer_item_color"
         app:itemTextColor="@drawable/drawer_item_color"
+        app:itemBackground="@drawable/menu_background_color"
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_main_drawer"
         android:background="#fefefe"/>
