@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodDetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#e9e9e9">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backarrow"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="backToLast"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cartbuy"
+                        android:onClick="toTrackPage"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_margin="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/monman"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nguyên liệu:"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="
+- 500 gr thịt ba chỉ (chọn miếng không quá nạc, không quá mỡ và phần nạc không bị tách ra)
+\n\n
+- Hành lá
+\n\n
+- Đường, xì dầu, rượu trắng, nước mắm ngon
+
+
+"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thực hiện:"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="
+- Thịt ba chỉ chọn miếng ngon, không quá nhiều mỡ cũng không nhiều nạc quá (dễ mua phải thịt nuôi bằng chất tạo nạc gây hại cho sức khỏe), phần thịt nạc và mỡ cũng gắn kết không bị bong rời.
+\n\n
+- Rửa sạch thịt ba chỉ. Nếu muốn đảm bảo an toàn, bạn có thể xát qua chút muối rồi rửa sạch lại để khử bớt mùi hôi và chất bẩn.
+\n\n
+- Sau đó, cho thịt vào nồi luộc đến khi nước sôi. Để thịt sôi khoảng 1 phút rồi tắt bếp, sau đó vớt ra để ráo, bước này vừa giúp cho thịt khi rim lâu vẫn căng mọng, đẹp mắt, vừa có thể loại bỏ bớt chất độc hại trong thịt ra.
+\n\n
+- Thái mỏng miếng thịt vừa phải theo thói quen của gia đình bạn.
+\n\n
+- Tiếp tục, để tạo được màu sắc đẹp và vị mặn ngọt đậm đà cho món thịt ba chỉ kho, bạn cần thắng đường chuẩn. Đường thắng bạn có thể chọn đường trắng hoặc đường phèn.
+\n\n
+Với 5 lạng thịt, bạn nên dùng khoảng 15 gr đường cho vào chảo, sau đó thắng lên trên lửa vừa. Khuấy đều tay đến khi hỗn hợp đường chuyển sang màu cánh gián thì tắt bếp.
+\n\n
+- Trút thịt vào chảo đảo tiếp đều tay. Đến khi phần đường chuyển từ màu cánh gián sang màu đen thì bạn phải tắt bếp ngay. Nếu để quá lửa thịt sẽ bị cháy, làm mất đi độ hấp dẫn của món thịt kho.
+\n\n
+- Sau đó, bạn cho thêm 1 thìa rượu, 3 thìa xì dầu, cho thêm chút nước vào chảo và đun sôi liu riu khoảng 15 phút.
+\n\n
+- Sau đó, bạn thử ấn nhẹ vào miếng thịt, nếu thịt đã mềm thì nếm thử chút gia vị xem đã vừa ăn chưa. Nếu nhạt bạn cho thêm chút nước mắm ngon. Sau đó bạn rắc ít hành lá thái nhỏ và tiêu lên, đảo 3 phút nữa rồi tắt bếp.
+\n\n
+Như vậy là bạn đã hoàn thành món thịt ba chỉ kho mặn ngọt, ngon đúng điệu cho bữa cơm gia đình thêm hấp dẫn, đầm ấm rồi.
+"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="10dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Oder"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/roundbutton"
+                        android:textColor="#ffffff"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
