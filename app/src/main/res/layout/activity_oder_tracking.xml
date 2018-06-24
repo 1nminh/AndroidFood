@@ -106,7 +106,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/house1" />
+                        app:srcCompat="@drawable/housegrey1" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -120,10 +120,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="right"
+
                     android:orientation="vertical">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
                         app:srcCompat="@drawable/cook1"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -147,7 +149,7 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/deliver1"/>
+                    app:srcCompat="@drawable/delivergrey1"/>
 
                 <TextView
                     android:layout_width="wrap_content"
