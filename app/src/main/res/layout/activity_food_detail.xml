@@ -143,6 +143,7 @@ Như vậy là bạn đã hoàn thành món thịt ba chỉ kho mặn ngọt, ng
                         android:textSize="15dp"
                         android:textAlignment="center"
                         android:background="@drawable/roundbutton"
+                        android:onClick="goToOrder"
                         android:textColor="#ffffff"
                         />
                 </LinearLayout>

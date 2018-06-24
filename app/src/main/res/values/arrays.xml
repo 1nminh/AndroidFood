@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="items">
+        <item>Đã chế biến (20$ / món)</item>
+        <item>Chỉ Nguyên liệu (8$ / món)</item>
+
+    </string-array>
+</resources>
