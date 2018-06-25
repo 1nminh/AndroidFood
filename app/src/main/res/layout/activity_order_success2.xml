@@ -80,15 +80,14 @@
                         android:textSize="24dp"
                         android:textStyle="bold"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
+                    <Spinner
+                        android:id="@+id/Spinner01"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:gravity="center"
+
                         android:layout_marginTop="10dp"
-                        android:text="Tên món ăn đã đặt:"
-                        android:textAlignment="center"
-                        android:textSize="15dp"
-                        android:textColor="#a99d9d"
-                        android:textStyle="italic"/>
+                        />
 
                 </LinearLayout>
 
