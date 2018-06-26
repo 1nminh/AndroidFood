@@ -23,8 +23,8 @@ public class OrderActivity extends AppCompatActivity {
         List<String> list;
 
         list = new ArrayList<>();
-        list.add("Đã chế biến (20$ / món)");
-        list.add("Chỉ Nguyên liệu (8$ / món)");
+        list.add("Cooked (20$ / each)");
+        list.add("Ingredient Only (8$ / each)");
         adapter = new ArrayAdapter<String>(this, R.layout.spinner_item,list);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
@@ -45,11 +45,11 @@ public class OrderActivity extends AppCompatActivity {
 
         Spinner spinner = (Spinner) findViewById(R.id.Spinner01);
         String text = spinner.getSelectedItem().toString();
-        if (text == "Đã chế biến (20$ / món)"){
+        if (text == "Cooked (20$ / each)"){
             Intent intent = new Intent(this, OrderSuccessActivity.class);
             startActivity(intent);
         }
-        if (text == "Chỉ Nguyên liệu (8$ / món)"){
+        if (text == "Ingredient Only (8$ / each)"){
             Intent intent = new Intent(this, OrderSuccess2Activity.class);
             startActivity(intent);
         }

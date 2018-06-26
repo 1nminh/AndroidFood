@@ -20,7 +20,7 @@
 
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/suncloud"/>
+            app:srcCompat="@drawable/sun12h"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -48,7 +48,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/sun" />
+                app:srcCompat="@drawable/sunrise" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
             <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/moon"/>
+            app:srcCompat="@drawable/moon3"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

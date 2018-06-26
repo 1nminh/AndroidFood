@@ -5,17 +5,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class FoodActivity extends AppCompatActivity {
+public class FoodHotestActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food);
+        setContentView(R.layout.activity_food_hotest);
     }
 
+
+
     public void backToLast(View view) {
-        Intent intent = new Intent(this,MainActivity.class);
-        startActivity(intent);
+        super.onBackPressed();
     }
 
     public void goToDetail(View view) {
@@ -24,8 +25,8 @@ public class FoodActivity extends AppCompatActivity {
     }
 
 
-    public void goToHotest(View view) {
-        Intent intent = new Intent(this,FoodHotestActivity.class);
+    public void goToNewest(View view) {
+        Intent intent = new Intent(this,FoodActivity.class);
         startActivity(intent);
     }
 }

@@ -52,13 +52,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" 
-                    android:text="Họ Và Tên:"
+                    android:text="Name:"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:cursorVisible="false"
+                    android:hint="Your Name"
                     android:maxLines="1"
                     android:lines="1"
                     android:singleLine="true"
@@ -68,13 +69,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Số Điện Thoại:"
+                    android:text="Phone:"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:cursorVisible="false"
+                    android:hint="Your Phone Number"
                     android:maxLines="1"
                     android:lines="1"
                     android:singleLine="true"
@@ -84,13 +86,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Địa Chỉ Nhà:"
+                    android:text="Address:"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:cursorVisible="false"
+                    android:hint="Your Address"
                     android:maxLines="1"
                     android:lines="1"
                     android:singleLine="true"
@@ -100,27 +103,28 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Loại Hình Thức Ăn:"
+                    android:text="Food Type:"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
                 <Spinner
                     android:id="@+id/Spinner01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="right"
+                    android:gravity="left"
                     android:layout_marginBottom="40dp"
                     />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Số Lượng:"
+                    android:text="Amount:"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:cursorVisible="false"
+
                     android:maxLines="1"
                     android:lines="1"
                     android:singleLine="true"
@@ -138,7 +142,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Xác Nhận Đặt Hàng"
+                    android:text="Submit Order"
                     android:textSize="15dp"
                     android:textAlignment="center"
                     android:background="@drawable/roundbutton"
