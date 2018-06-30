@@ -59,122 +59,42 @@
 
 
         </android.support.design.widget.AppBarLayout>
-
-
-
-        <ScrollView
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/vf"
             android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <include android:id="@+id/detail1" layout="@layout/activity_food_detail_view_pager" />
+            <include android:id="@+id/detail2" layout="@layout/view_4" />
+
+
+        </ViewFlipper>
+
+        <Button
+            android:id="@+id/abcde"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ffffff"
-            android:layout_margin="15dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:background="@drawable/monman"/>
-                <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="300dp"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        >
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_margin="10dp"
-                            android:background="@drawable/borderlines"
-                            android:layout_weight="1">
+            android:background="@android:color/transparent"
+            android:text="Go To Videos"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp"
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Nguyên liệu:"
-                                android:padding="10dp"
-                                android:textStyle="bold"
-                                android:textSize="15dp"/>
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:padding="10dp"
-                                android:text="
- - 500 gr thịt ba chỉ (chọn miếng không quá nạc,
-\n không quá mỡ và phần nạc không bị tách ra)
-\n
- - Hành lá
-\n
- - Đường, xì dầu, rượu trắng, nước mắm ngon
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+        <!--<me.kaelaela.verticalviewpager.VerticalViewPager-->
+            <!--android:id="@+id/viewpager2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
 
-
-"/>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_margin="10dp"
-                            android:orientation="vertical"
-                            android:background="@drawable/borderlines"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Thực hiện:"
-                                android:padding="10dp"
-                                android:textStyle="bold"
-                                android:textSize="15dp"/>
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:padding="10dp"
-                                android:text="
- - Thịt ba chỉ chọn miếng ngon, không quá nhiều mỡ cũng không nhiều nạc quá
- \n (dễ mua phải thịt nuôi bằng chất tạo nạc gây hại cho sức khỏe),\n
-  phần thịt nạc và mỡ cũng gắn kết không bị bong rời.
-\n
- - Rửa sạch thịt ba chỉ. Nếu muốn đảm bảo an toàn, bạn có thể xát qua\n
-  chút muối rồi rửa sạch lại để khử bớt mùi hôi và chất bẩn.
-
-"/>
-                        </LinearLayout>
+        <!--</me.kaelaela.verticalviewpager.VerticalViewPager>-->
 
 
 
-                    </LinearLayout>
 
-                </HorizontalScrollView>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:padding="10dp">
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:padding="5dp"
-                        android:text="Đặt Món Ăn"
-                        android:textSize="15dp"
-                        android:textAlignment="center"
-                        android:background="@drawable/roundbutton"
-                        android:onClick="goToOrder"
-                        android:textColor="#ffffff"
-                        />
-                </LinearLayout>
-
-
-            </LinearLayout>
-        </ScrollView>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

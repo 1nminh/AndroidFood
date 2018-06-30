@@ -38,7 +38,10 @@
         <activity
             android:name=".OrderSuccess2Activity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".FoodHotestActivity"
+        <activity
+            android:name=".FoodHotestActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FoodDetailViewPagerActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

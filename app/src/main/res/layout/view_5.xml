@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/MyL"
+
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager12"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Đặt Món Ăn"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:background="@drawable/roundbutton"
+                android:onClick="goToOrder"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#ffffff"-->
+        <!--android:layout_margin="15dp">-->
+
+    <!--</ScrollView>-->
+
+    <!--<include-->
+        <!--android:id="@+id/foodDetailViewPager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--layout="@layout/activity_food_detail_view_pager">-->
+
+    <!--</include>-->
+
+</RelativeLayout>

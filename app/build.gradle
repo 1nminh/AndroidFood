@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "day13.adler.foodapp"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -29,5 +29,5 @@ dependencies {
 
     implementation 'de.hdodenhof:circleimageview:2.2.0'
 
-
+    compile 'me.kaelaela:verticalviewpager:1.0.0@aar'
 }
