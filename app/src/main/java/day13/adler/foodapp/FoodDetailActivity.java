@@ -1,6 +1,8 @@
 package day13.adler.foodapp;
 
 import android.content.Intent;
+import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -30,30 +32,32 @@ public class FoodDetailActivity extends AppCompatActivity {
 //        ViewPager viewPager = (ViewPager) myLinear.findViewById(R.id.viewpager12);
 //        viewPager.setAdapter(new CustomPagerAdapter(this));
 
-        final ViewFlipper vf = (ViewFlipper)findViewById(R.id.vf);
-        final Button button = (Button)findViewById(R.id.abcde);
-        button.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
+//        final ViewFlipper vf = (ViewFlipper)findViewById(R.id.vf);
 
 
-                switch (vf.getDisplayedChild()) {
-                    case 0:
-                        vf.setDisplayedChild(1);
-                        button.setText("Go To Detail");
-
-                        break;
-                    case 1:
-                        vf.setDisplayedChild(0);
-                        button.setText("Go To Videos");
-
-                        break;
-                }
-
-            }
-        });
+//        button.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//                // TODO Auto-generated method stub
+//
+//
+//                switch (vf.getDisplayedChild()) {
+//                    case 0:
+//                        vf.setDisplayedChild(1);
+//                        button.setText("Go To Detail");
+//
+//                        break;
+//                    case 1:
+//                        vf.setDisplayedChild(0);
+//                        button.setText("Go To Videos");
+//
+//
+//                        break;
+//                }
+//
+//            }
+//        });
 
         View view = findViewById(R.id.detail1);
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager12);
@@ -95,5 +99,11 @@ public class FoodDetailActivity extends AppCompatActivity {
 
     public void SwtichPage(View view) {
 
+    }
+
+
+    public void goToVieos(View view) {
+        Intent intent = new Intent(this,VideoActivity.class);
+        startActivity(intent);
     }
 }

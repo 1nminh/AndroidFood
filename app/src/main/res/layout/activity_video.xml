@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ScrollView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/sw_layout"
+            android:layout_above="@+id/footer"
+            android:orientation="vertical">
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/youtube_player"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"/>
+        </ScrollView>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="goToDetail"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/abcde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/transparent"
+                android:onClick="goToDetail"
+                android:text="Go To Detail"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/next1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
