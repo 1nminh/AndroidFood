@@ -22,7 +22,7 @@
                 android:textSize="30dp"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimaryDark"
-                android:text="Bước 4:"/>
+                android:text="Bước 3:"/>
 
         </LinearLayout>
 
@@ -38,22 +38,15 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
-                android:layout_weight="1"
-                android:background="@drawable/r9"
+                android:layout_weight="1.5"
+                android:background="@drawable/r7"
                 android:layout_margin="5dp"/>
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
-                android:layout_weight="1"
-                android:background="@drawable/r10"
-                android:layout_margin="5dp"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:background="@drawable/r11"
+                android:layout_weight="1.5"
+                android:background="@drawable/r8"
                 android:layout_margin="5dp"/>
 
 
@@ -70,8 +63,14 @@
                 android:textSize="17dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=" Khi thịt săn lại thì cho nước ướp thịt, hành lá, ớt cắt nhỏ và 1 muỗng cà phê tiêu vào, đảo đều rồi đun với lửa vừa."></TextView>
-            </LinearLayout>
+                android:text=" Trong nồi đất, đun nóng 2 muỗng canh dầu ăn rồi cho hành tím băm vào phi thơm.\n"></TextView>
+
+            <TextView
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Dùng đũa gắp thịt đã ướp cho vào nồi, đảo đều tay."></TextView>
+        </LinearLayout>
 
     </LinearLayout>
 

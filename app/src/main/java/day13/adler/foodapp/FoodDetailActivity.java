@@ -60,8 +60,13 @@ public class FoodDetailActivity extends AppCompatActivity {
 //        });
 
         View view = findViewById(R.id.detail1);
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager12);
+        ViewPager viewPager = (ViewPager)view.findViewById(R.id.viewpager12);
         viewPager.setAdapter(new CustomPagerAdapter(this));
+
+
+
+
+
 
 
 //        VerticalViewPager viewPager2 = (VerticalViewPager)findViewById(R.id.viewpager2);
@@ -99,6 +104,11 @@ public class FoodDetailActivity extends AppCompatActivity {
 
     public void SwtichPage(View view) {
 
+    }
+
+    public void goToMap(View view) {
+        Intent intent = new Intent(this,MapsActivity.class);
+        startActivity(intent);
     }
 
 

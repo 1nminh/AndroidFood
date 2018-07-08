@@ -5,6 +5,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 
 public class FoodDetailViewPagerActivity extends AppCompatActivity {
 
@@ -18,10 +19,14 @@ public class FoodDetailViewPagerActivity extends AppCompatActivity {
         viewPager.setAdapter(new CustomPagerAdapter(this));
 
 
+        
+
     }
 
     public void goToOrder(View view) {
         Intent intent = new Intent(this,OrderActivity.class);
         startActivity(intent);
     }
+
+
 }

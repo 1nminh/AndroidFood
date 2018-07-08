@@ -8,6 +8,8 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 public class CustomPagerAdapter extends PagerAdapter {
 
@@ -21,12 +23,16 @@ public class CustomPagerAdapter extends PagerAdapter {
 
 
 
+
     @Override
     public Object instantiateItem(ViewGroup collection, int position) {
         ModelObject modelObject = ModelObject.values()[position];
-        LayoutInflater inflater = LayoutInflater.from(mContext);
+        final LayoutInflater inflater = LayoutInflater.from(mContext);
         ViewGroup layout = (ViewGroup) inflater.inflate(modelObject.getLayoutResId(), collection, false);
         collection.addView(layout);
+
+
+
 
 
         return layout;
@@ -55,5 +61,7 @@ public class CustomPagerAdapter extends PagerAdapter {
         ModelObject customPagerEnum = ModelObject.values()[position];
         return mContext.getString(customPagerEnum.getTitleResId());
     }
+
+
 
 }

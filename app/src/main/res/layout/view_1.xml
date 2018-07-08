@@ -4,25 +4,76 @@
     android:background="@android:color/white"
     android:layout_height="match_parent">
 
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="3">
+        android:orientation="vertical">
 
-        <LinearLayout
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.3"
-            >
+            android:layout_height="250dp"
+            android:background="@drawable/monman"
+            />
+
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Thịt Kho Ba Rọi"
                 android:textAlignment="center"
-                android:textSize="30dp"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimaryDark"
-                android:text="Bước 1:"/>
+                android:textSize="25dp"
+                android:padding="10dp"
+               />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#f6f6f6"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nguyên Liệu:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#373737"
+            android:padding="10dp"
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/textborderlines"
+            android:onClick="goToMap"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thịt ba rọi"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="#373737"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="500gr"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
 
         </LinearLayout>
 
@@ -30,46 +81,196 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="3"
-            android:layout_weight="1"
-            >
+            android:weightSum="2"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/textborderlines">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nước tương"
                 android:layout_weight="1"
-                android:background="@drawable/r1"
-                android:layout_margin="5dp"/>
+                android:textStyle="bold"
+                android:textColor="#373737"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4 muỗng canh"
                 android:layout_weight="1"
-                android:background="@drawable/r2"
-                android:layout_margin="5dp"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:background="@drawable/r3"
-                android:layout_margin="5dp"/>
-
+                android:textStyle="bold"/>
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1.7">
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/textborderlines">
 
             <TextView
-                android:textSize="17dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=" Cho 1.5 muỗng cà phê đường và 3ml dầu ăn vào nồi đất, đun và dùng đũa khuấy đều cho đến khi đường cháy thành màu cánh kiến thì cho vào 40ml nước lọc, khuấy đều, tắt bếp."/>
+                android:text="Gừng"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="#373737"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 cũ"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/textborderlines">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Muối"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="#373737"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2/3 muỗng cà phê"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/textborderlines">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rượu trắng"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="#373737"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 muỗng canh"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/textborderlines">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đường nâu"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="#373737"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 muỗng canh"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/textborderlines">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dầu ăn"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="#373737"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 muỗng canh"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/textborderlines"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bột ngọt"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="#373737"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 muỗng cà phê"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
 
         </LinearLayout>
 
     </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+
+
 
 </RelativeLayout>

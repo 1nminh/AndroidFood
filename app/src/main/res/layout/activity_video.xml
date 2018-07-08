@@ -14,12 +14,14 @@
             android:layout_height="fill_parent"
             android:id="@+id/sw_layout"
             android:layout_above="@+id/footer"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
             <com.google.android.youtube.player.YouTubePlayerView
                 android:id="@+id/youtube_player"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#fff"/>
+                android:background="#fff"
+                android:layout_gravity="center"/>
         </ScrollView>
 
 

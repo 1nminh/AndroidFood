@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:background="@android:color/white"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,7 +22,7 @@
                 android:textSize="30dp"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimaryDark"
-                android:text="Bước 5:"/>
+                android:text="Bước 6:"/>
 
         </LinearLayout>
 
@@ -34,7 +31,44 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="3"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@drawable/r14"
+                android:layout_margin="5dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@drawable/r15"
+                android:layout_margin="5dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@drawable/r16"
+                android:layout_margin="5dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="0.7"
 
             >
 
@@ -42,14 +76,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
                 android:layout_weight="1.5"
-                android:background="@drawable/r12"
+                android:background="@drawable/r17"
                 android:layout_margin="5dp"/>
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
                 android:layout_weight="1.5"
-                android:background="@drawable/r13"
+                android:background="@drawable/r18"
                 android:layout_margin="5dp"/>
 
 
@@ -61,17 +95,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1.7"
+            android:layout_weight="0.7"
             android:orientation="vertical">
 
             <TextView
                 android:textSize="17dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Khi nước cạn đi một nữa thì đậy nấp đun thêm đến khi nước gần cạn là được.">
-
-            </TextView>
+                android:text=" Món thịt kho cay cay, mặn mặn và thơm phức hương tiêu thật đưa cơm luôn đấy!"></TextView>
         </LinearLayout>
+
     </LinearLayout>
 
 </RelativeLayout>
