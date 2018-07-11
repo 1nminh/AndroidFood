@@ -4,74 +4,110 @@
     android:background="@android:color/white"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+        <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="3">
+        android:layout_height="300dp"
+        android:background="@drawable/r4" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+
+
+        <ImageView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.3"
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:textSize="30dp"
-                android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"
-                android:text="Bước 3:"/>
+            android:background="@drawable/nextpage"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
 
-        </LinearLayout>
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/r5"-->
+        <!--android:layout_margin="5dp"/>-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="3"
-            android:layout_weight="1"
-
-            >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_weight="1.5"
-                android:background="@drawable/r7"
-                android:layout_margin="5dp"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_weight="1.5"
-                android:background="@drawable/r8"
-                android:layout_margin="5dp"/>
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/r6"-->
+        <!--android:layout_margin="5dp"/>-->
 
 
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:weightSum="3">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.3"-->
+            <!--&gt;-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="30dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/colorPrimaryDark"-->
+                <!--android:text="Bước 3:"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="3"-->
+            <!--android:layout_weight="1"-->
+
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:background="@drawable/r7"-->
+                <!--android:layout_margin="5dp"/>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:background="@drawable/r8"-->
+                <!--android:layout_margin="5dp"/>-->
 
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.7"
-            android:orientation="vertical">
 
-            <TextView
-                android:textSize="17dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text=" Trong nồi đất, đun nóng 2 muỗng canh dầu ăn rồi cho hành tím băm vào phi thơm.\n"></TextView>
 
-            <TextView
-                android:textSize="17dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text=" Dùng đũa gắp thịt đã ướp cho vào nồi, đảo đều tay."></TextView>
-        </LinearLayout>
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1.7"-->
+            <!--android:orientation="vertical">-->
 
-    </LinearLayout>
+            <!--<TextView-->
+                <!--android:textSize="17dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=" Trong nồi đất, đun nóng 2 muỗng canh dầu ăn rồi cho hành tím băm vào phi thơm.\n"></TextView>-->
+
+            <!--<TextView-->
+                <!--android:textSize="17dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=" Dùng đũa gắp thịt đã ướp cho vào nồi, đảo đều tay."></TextView>-->
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
 
 </RelativeLayout>

@@ -4,107 +4,139 @@
     android:background="@android:color/white"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="3">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
 
-        <LinearLayout
-            android:layout_width="match_parent"
+    >
+
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/r7" />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.3"
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:textSize="30dp"
-                android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"
-                android:text="Bước 6:"/>
+            android:background="@drawable/nextpage"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="3"
-            android:layout_weight="0.5"
-
-            >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:background="@drawable/r14"
-                android:layout_margin="5dp"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:background="@drawable/r15"
-                android:layout_margin="5dp"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:background="@drawable/r16"
-                android:layout_margin="5dp"/>
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_weight="1.5"-->
+    <!--android:background="@drawable/r8"-->
+    <!--android:layout_margin="5dp"/>-->
 
 
 
 
+    </RelativeLayout>
 
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:weightSum="3">-->
 
-        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.3"-->
+            <!--&gt;-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="30dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/colorPrimaryDark"-->
+                <!--android:text="Bước 6:"/>-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="3"
-            android:layout_weight="0.7"
+        <!--</LinearLayout>-->
 
-            >
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="3"-->
+            <!--android:layout_weight="0.5"-->
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_weight="1.5"
-                android:background="@drawable/r17"
-                android:layout_margin="5dp"/>
+            <!--&gt;-->
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_weight="1.5"
-                android:background="@drawable/r18"
-                android:layout_margin="5dp"/>
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/r14"-->
+                <!--android:layout_margin="5dp"/>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/r15"-->
+                <!--android:layout_margin="5dp"/>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/r16"-->
+                <!--android:layout_margin="5dp"/>-->
 
 
 
 
 
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.7"
-            android:orientation="vertical">
+        <!--</LinearLayout>-->
 
-            <TextView
-                android:textSize="17dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text=" Món thịt kho cay cay, mặn mặn và thơm phức hương tiêu thật đưa cơm luôn đấy!"></TextView>
-        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="3"-->
+            <!--android:layout_weight="0.7"-->
 
-    </LinearLayout>
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:background="@drawable/r17"-->
+                <!--android:layout_margin="5dp"/>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:background="@drawable/r18"-->
+                <!--android:layout_margin="5dp"/>-->
+
+
+
+
+
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.7"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:textSize="17dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=" Món thịt kho cay cay, mặn mặn và thơm phức hương tiêu thật đưa cơm luôn đấy!"></TextView>-->
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
 
 </RelativeLayout>

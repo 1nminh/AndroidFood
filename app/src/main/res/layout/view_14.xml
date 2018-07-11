@@ -9,23 +9,54 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
+
         >
 
         <ImageView
-            android:id="@+id/img1"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:background="@drawable/r1" />
-
-
+        android:background="@drawable/r14" />
 
 
         <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/nextpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nextpage"
             android:layout_centerInParent="true"
-        android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true"/>
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/r15"-->
+        <!--android:layout_margin="5dp"/>-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/r16"-->
+        <!--android:layout_margin="5dp"/>-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_weight="1.5"-->
+        <!--android:background="@drawable/r17"-->
+        <!--android:layout_margin="5dp"/>-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_weight="1.5"-->
+        <!--android:background="@drawable/r18"-->
+        <!--android:layout_margin="5dp"/>-->
+
+
+
+
 
 
     </RelativeLayout>

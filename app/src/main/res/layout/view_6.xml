@@ -7,71 +7,101 @@
     android:layout_height="match_parent"
     >
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="3">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
 
-        <LinearLayout
-            android:layout_width="match_parent"
+
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/r6" />
+
+        <ImageView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.3"
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:textSize="30dp"
-                android:textStyle="bold"
-                android:textColor="@color/colorPrimaryDark"
-                android:text="Bước 5:"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="3"
-            android:layout_weight="1"
-
-            >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_weight="1.5"
-                android:background="@drawable/r12"
-                android:layout_margin="5dp"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_weight="1.5"
-                android:background="@drawable/r13"
-                android:layout_margin="5dp"/>
+            android:background="@drawable/backpage"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"/>
 
 
 
 
 
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.7"
-            android:orientation="vertical">
+    </RelativeLayout>
 
-            <TextView
-                android:textSize="17dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Khi nước cạn đi một nữa thì đậy nấp đun thêm đến khi nước gần cạn là được.">
 
-            </TextView>
-        </LinearLayout>
-    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:weightSum="3">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.3"-->
+            <!--&gt;-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="30dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/colorPrimaryDark"-->
+                <!--android:text="Bước 5:"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="3"-->
+            <!--android:layout_weight="1"-->
+
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:background="@drawable/r12"-->
+                <!--android:layout_margin="5dp"/>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:background="@drawable/r13"-->
+                <!--android:layout_margin="5dp"/>-->
+
+
+
+
+
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1.7"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:textSize="17dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Khi nước cạn đi một nữa thì đậy nấp đun thêm đến khi nước gần cạn là được.">-->
+
+            <!--</TextView>-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
 
 </RelativeLayout>

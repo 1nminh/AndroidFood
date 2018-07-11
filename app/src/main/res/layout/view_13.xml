@@ -9,23 +9,29 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
+
         >
 
+
+
         <ImageView
-            android:id="@+id/img1"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:background="@drawable/r1" />
-
-
-
+        android:background="@drawable/r13" />
 
         <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/nextpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backpage"
             android:layout_centerInParent="true"
-        android:layout_alignParentRight="true"/>
+            android:layout_alignParentLeft="true"/>
+
+
+
+
+
+
 
 
     </RelativeLayout>

@@ -63,6 +63,28 @@ public class FoodDetailActivity extends AppCompatActivity {
         ViewPager viewPager = (ViewPager)view.findViewById(R.id.viewpager12);
         viewPager.setAdapter(new CustomPagerAdapter(this));
 
+        View view2 = findViewById(R.id.detail2);
+        ViewPager viewPager2 = (ViewPager)view2.findViewById(R.id.viewpager12);
+        viewPager2.setAdapter(new CustomPagerAdapter2(this));
+
+        View view3 = findViewById(R.id.detail3);
+        ViewPager viewPager3 = (ViewPager)view3.findViewById(R.id.viewpager12);
+        viewPager3.setAdapter(new CustomPagerAdapter3(this));
+
+        View view4 = findViewById(R.id.detail4);
+        ViewPager viewPager4 = (ViewPager)view4.findViewById(R.id.viewpager12);
+        viewPager4.setAdapter(new CustomPagerAdapter4(this));
+
+        View view5 = findViewById(R.id.detail5);
+        ViewPager viewPager5 = (ViewPager)view5.findViewById(R.id.viewpager12);
+        viewPager5.setAdapter(new CustomPagerAdapter5(this));
+
+        View view6 = findViewById(R.id.detail6);
+        ViewPager viewPager6 = (ViewPager)view6.findViewById(R.id.viewpager12);
+        viewPager6.setAdapter(new CustomPagerAdapter6(this));
+
+
+
 
 
 

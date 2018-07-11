@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#ffffff"
+        android:background="#f2f2f2"
         >
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
@@ -43,6 +43,15 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/play"
+                        android:onClick="goToVieos"
+                        android:layout_marginRight="20dp"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/homeicon"
                         android:onClick="toHomePage"
                         android:layout_marginRight="20dp"
@@ -53,8 +62,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/cartpink"
-                        android:onClick="toTrackPage"
+                        android:onClick="goToOrder"
                         />
+
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -69,8 +80,8 @@
     android:orientation="vertical">
 
     <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:id="@+id/sw_layout"
         android:layout_above="@+id/footer"
         android:orientation="vertical"
@@ -78,65 +89,581 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <include android:id="@+id/detail1" layout="@layout/activity_food_detail_view_pager" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+
+            <LinearLayout
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/monman"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thịt Kho Ba Rọi"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25dp"
+                    android:padding="10dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="#f6f6f6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nguyên Liệu:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#373737"
+                        android:padding="10dp"
+                        />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:paddingTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/textborderlines"
+                        android:onClick="goToMap"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Thịt ba rọi"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="#373737"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="500gr"
+                            android:layout_weight="1"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:paddingTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/textborderlines">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nước tương"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="#373737"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4 muỗng canh"
+                            android:layout_weight="1"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:paddingTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/textborderlines">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Gừng"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="#373737"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1 cũ"
+                            android:layout_weight="1"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:paddingTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/textborderlines">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Muối"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="#373737"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2/3 muỗng cà phê"
+                            android:layout_weight="1"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:paddingTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/textborderlines">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rượu trắng"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="#373737"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1 muỗng canh"
+                            android:layout_weight="1"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:paddingTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/textborderlines">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Đường nâu"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="#373737"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2 muỗng canh"
+                            android:layout_weight="1"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:paddingTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/textborderlines">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dầu ăn"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="#373737"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1 muỗng canh"
+                            android:layout_weight="1"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:paddingTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/textborderlines1"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bột ngọt"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="#373737"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1 muỗng cà phê"
+                            android:layout_weight="1"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Các Bước Thực Hiện"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25dp"
+                android:padding="10dp"
+                />
         </LinearLayout>
-    </ScrollView>
 
-    <LinearLayout
-        android:id="@+id/footer"
+            <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_margin="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="3dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:onClick="goToVieos">
-        <!--<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"-->
-        <!--android:id="@+id/vf"-->
-        <!--android:layout_width="fill_parent"-->
-        <!--android:layout_height="wrap_content" >-->
+        android:orientation="vertical"
+        >
 
-        <!--<include android:id="@+id/detail2" layout="@layout/view_5" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Bước 1:"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Cho 1.5 muỗng cà phê đường và 3ml dầu ăn vào nồi đất, đun và dùng đũa khuấy đều cho đến khi đường cháy thành màu cánh kiến thì cho vào 40ml nước lọc, khuấy đều, tắt bếp."/>
+
+        </LinearLayout>
+        <include android:id="@+id/detail1" layout="@layout/activity_food_detail_view_pager" />
 
 
-        <!--</ViewFlipper>-->
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/back1"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="10dp"
-            />
-
-        <TextView
-            android:id="@+id/abcde"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="@android:color/transparent"
-            android:text="Go To Video"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="20dp"
-
-            android:textStyle="bold" />
 
 
 
     </LinearLayout>
 
+            <LinearLayout
+                android:background="@color/colorPrimary"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Bước 2:"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:textSize="17dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Thịt heo rửa sạch, cắt nhỏ vừa ăn rồi trộn đều với 1 muỗng cà phê tỏi băm, 2 muỗng canh nước mắm, 1/3 muỗng cà phê muối, 1 muỗng cà phê đường, 1/2 muỗng cà phê bột ngọt và 1 muỗng cà phê tiêu. Đổ thêm nước màu vừa đun vào thịt, ướp khoảng 10 phút."/>
+
+                </LinearLayout>
+                <include android:id="@+id/detail2" layout="@layout/activity_food_detail_view_pager" />
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/colorPrimary"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Bước 3:"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:textSize="17dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Trong nồi đất, đun nóng 2 muỗng canh dầu ăn rồi cho hành tím băm vào phi thơm.\n"></TextView>
+
+                    <TextView
+                        android:textSize="17dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Dùng đũa gắp thịt đã ướp cho vào nồi, đảo đều tay."></TextView>
+
+                </LinearLayout>
+                <include android:id="@+id/detail3" layout="@layout/activity_food_detail_view_pager" />
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/colorPrimary"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Bước 4:"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:textSize="17dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Khi thịt săn lại thì cho nước ướp thịt, hành lá, ớt cắt nhỏ và 1 muỗng cà phê tiêu vào, đảo đều rồi đun với lửa vừa."></TextView>
+
+                </LinearLayout>
+                <include android:id="@+id/detail4" layout="@layout/activity_food_detail_view_pager" />
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/colorPrimary"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Bước 5:"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:textSize="17dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Khi nước cạn đi một nữa thì đậy nấp đun thêm đến khi nước gần cạn là được."/>
+
+                </LinearLayout>
+                <include android:id="@+id/detail5" layout="@layout/activity_food_detail_view_pager" />
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/colorPrimary"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Bước 6:"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:textSize="17dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Món thịt kho cay cay, mặn mặn và thơm phức hương tiêu thật đưa cơm luôn đấy!"></TextView>
+
+                </LinearLayout>
+                <include android:id="@+id/detail6" layout="@layout/activity_food_detail_view_pager" />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
 </RelativeLayout>
 
-        <!--<me.kaelaela.verticalviewpager.VerticalViewPager-->
-            <!--android:id="@+id/viewpager2"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent">-->
 
-        <!--</me.kaelaela.verticalviewpager.VerticalViewPager>-->
 
 
 

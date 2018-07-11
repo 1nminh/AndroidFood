@@ -7,25 +7,37 @@
 
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    >
+
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/r12"
+    />
+
+
 
         <ImageView
-            android:id="@+id/img1"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:background="@drawable/r1" />
-
-
-
-
-        <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/nextpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nextpage"
             android:layout_centerInParent="true"
-        android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true"/>
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_weight="1.5"-->
+    <!--android:background="@drawable/r13"-->
+    <!--android:layout_margin="5dp"/>-->
+
+
+
+
 
 
     </RelativeLayout>

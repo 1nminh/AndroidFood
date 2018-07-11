@@ -1,17 +1,16 @@
 package day13.adler.foodapp;
 
-public enum ModelObject {
+public enum ModelObject4 {
 
-    D(R.string.green, R.layout.view_1),
-    RED(R.string.red, R.layout.view_2),
-    BLUE(R.string.blue, R.layout.view_3);
-
+    D(R.string.green, R.layout.view_9),
+    RED(R.string.red, R.layout.view_10),
+    BLUE(R.string.blue, R.layout.view_11);
 
 
     private int mTitleResId;
     private int mLayoutResId;
 
-    ModelObject(int titleResId, int layoutResId) {
+    ModelObject4(int titleResId, int layoutResId) {
         mTitleResId = titleResId;
         mLayoutResId = layoutResId;
     }
