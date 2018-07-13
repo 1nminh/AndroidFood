@@ -171,6 +171,7 @@
                         android:weightSum="2"
                         android:paddingTop="10dp"
                         android:layout_marginLeft="10dp"
+                        android:onClick="goToMap2"
                         android:background="@drawable/textborderlines">
 
                         <TextView

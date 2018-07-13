@@ -138,4 +138,9 @@ public class FoodDetailActivity extends AppCompatActivity {
         Intent intent = new Intent(this,VideoActivity.class);
         startActivity(intent);
     }
+
+    public void goToMap2(View view) {
+        Intent intent = new Intent(this,Map2Activity.class);
+        startActivity(intent);
+    }
 }
