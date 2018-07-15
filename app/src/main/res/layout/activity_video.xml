@@ -5,6 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VideoActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/goback"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="backToLast"/>
+
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,36 +53,36 @@
 
 
 
-        <LinearLayout
-            android:id="@+id/footer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:onClick="goToDetail"
-            android:layout_alignParentBottom="true">
-            <TextView
-                android:id="@+id/abcde"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:background="@android:color/transparent"
-                android:onClick="goToDetail"
-                android:text="Go To Detail"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="20dp"
+        <!--<LinearLayout-->
+            <!--android:id="@+id/footer"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center"-->
+            <!--android:onClick="goToDetail"-->
+            <!--android:layout_alignParentBottom="true">-->
+            <!--<TextView-->
+                <!--android:id="@+id/abcde"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:background="@android:color/transparent"-->
+                <!--android:onClick="goToDetail"-->
+                <!--android:text="Go To Detail"-->
+                <!--android:textColor="@color/colorPrimaryDark"-->
+                <!--android:textSize="20dp"-->
 
-                android:textStyle="bold" />
+                <!--android:textStyle="bold" />-->
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/next1"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="10dp"
-                />
-        </LinearLayout>
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/next1"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
 
 
     </RelativeLayout>

@@ -95,4 +95,8 @@ public class VideoActivity extends YouTubeBaseActivity implements YouTubePlayer.
         Intent intent = new Intent(this,FoodDetailActivity.class);
         startActivity(intent);
     }
+
+    public void backToLast(View view) {
+        onBackPressed();
+    }
 }

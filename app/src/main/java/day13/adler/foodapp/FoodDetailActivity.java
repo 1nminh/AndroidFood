@@ -143,4 +143,9 @@ public class FoodDetailActivity extends AppCompatActivity {
         Intent intent = new Intent(this,Map2Activity.class);
         startActivity(intent);
     }
+
+    public void goToIngredient(View view) {
+        Intent intent = new Intent(this,IngredientActivity.class);
+        startActivity(intent);
+    }
 }

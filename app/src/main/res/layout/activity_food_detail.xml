@@ -348,6 +348,28 @@
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_margin="20dp"
+
+                        >
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Xem Chi Tiết Nguyên Liệu"
+                            android:background="@drawable/roundbutton1"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:onClick="goToIngredient"
+                            />
+
+                    </LinearLayout>
+
                 </LinearLayout>
 
             </LinearLayout>

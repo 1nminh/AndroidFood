@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import com.google.android.gms.maps.Projection;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,6 +30,8 @@ public class OrderSuccessActivity extends AppCompatActivity {
         adapter = new ArrayAdapter<String>(this, R.layout.spinner_item,list);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+
+
 
     }
 
