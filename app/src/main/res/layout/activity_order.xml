@@ -168,14 +168,22 @@
                         android:textSize="20dp"
                         android:textStyle="bold"/>
                     <EditText
-                        android:layout_width="100dp"
+                        android:layout_width="70dp"
                         android:layout_height="wrap_content"
                         android:cursorVisible="false"
-
+                        android:inputType="number"
                         android:maxLines="1"
                         android:lines="1"
                         android:singleLine="true"
 
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(Phần)"
+                        android:textSize="17dp"
+                        android:textColor="#9a9a9a"
                         />
 
                 </LinearLayout>
@@ -215,6 +223,23 @@
                         android:textColor="@color/colorPrimaryDark"/>
                 </RadioGroup>
 
+                <LinearLayout
+                    android:id="@+id/lnlayout"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="30dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chọn Loại Thẻ:"
+                            android:textSize="17dp"
+                            android:textStyle="bold"/>
                 <Spinner
                     android:id="@+id/SpinnerOrder1"
                     android:layout_width="wrap_content"
@@ -223,10 +248,59 @@
                     android:layout_marginTop="5dp"
 
                     />
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tên Trên Thẻ:"
+                        android:textSize="17dp"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="false"
+                        android:hint="Tên người sở hữu"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:singleLine="true"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Số Tài Khoản:"
+                        android:textSize="17dp"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="false"
+                        android:hint="Tài khoản thẻ"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:singleLine="true"
+
+                        />
+
+                </LinearLayout>
+                </LinearLayout>
 
 
                 <TextView
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="*Giao Hàng Miễn Phí Cho Tất Cả Các Hóa Đơn Trên 80.000vnđ"

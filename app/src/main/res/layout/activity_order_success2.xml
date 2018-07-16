@@ -91,75 +91,115 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:paddingBottom="30dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="340dp"
+                    android:background="@drawable/backtime1"
+                    >
 
-
-                    <ImageView
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/check1"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Xác Nhận Hóa Đơn"
-                        android:textStyle="bold"
-                        android:textSize="15dp"/>
-
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="30dp">
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical"
+                        >
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            app:srcCompat="@drawable/housegrey1" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Đã Giao Hàng"
+                            android:text="Xác Nhận Hóa Đơn"
                             android:textStyle="bold"
                             android:textSize="15dp"/>
+
+
+                        <ImageView
+                            android:id="@+id/imgcheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/check1"/>
+
+
+
+
+
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="right"
-
-                        android:orientation="vertical">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginRight="10dp"
-                            app:srcCompat="@drawable/delivergrey1"/>
-                        <TextView
+                        android:orientation="horizontal"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:padding="20dp"
+                        >
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
 
-                            android:text="Đang Giao Hàng"
-                            android:textStyle="bold"
-                            android:textSize="15dp"/>
+
+
+                            <ImageView
+                                android:id="@+id/imghouse"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/housegrey1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Đã Giao Hàng"
+                                android:textStyle="bold"
+
+                                android:textSize="15dp"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+
+                            android:orientation="vertical">
+
+
+
+                            <ImageView
+                                android:id="@+id/imgtruck"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="15dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/delivergrey1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Đang Giao Hàng"
+                                android:textStyle="bold"
+                                android:textSize="15dp"/>
+
+                        </LinearLayout>
                     </LinearLayout>
 
-                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical"
+                        android:paddingTop="30dp">
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
 
 
                 <LinearLayout

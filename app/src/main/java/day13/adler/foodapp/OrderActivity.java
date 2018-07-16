@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -37,7 +38,7 @@ public class OrderActivity extends AppCompatActivity {
 //        adapter = new ArrayAdapter<String>(this, R.layout.spinner_item,list);
 //        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 //        spinner.setAdapter(adapter);
-
+        LinearLayout ln = (LinearLayout) findViewById(R.id.lnlayout);
         Spinner spinner = (Spinner) findViewById(R.id.SpinnerOrder);
         Spinner spinner1 = (Spinner) findViewById(R.id.SpinnerOrder1);
         ArrayAdapter<String> adapter;
@@ -60,24 +61,24 @@ public class OrderActivity extends AppCompatActivity {
         spinner1.setAdapter(adapter);
 
         rd3.setChecked(true);
-        spinner1.setVisibility(View.GONE);
+        ln.setVisibility(View.GONE);
 
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.rdbG);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
         {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                Spinner spinner1 = (Spinner) findViewById(R.id.SpinnerOrder1);
+                LinearLayout ln = (LinearLayout) findViewById(R.id.lnlayout);
                 RadioButton rd4 = (RadioButton)group.findViewById(checkedId);
 
 
 
                 boolean isChecked = rd4.isChecked();
                 if (isChecked){
-                    spinner1.setVisibility(View.VISIBLE);
+                    ln.setVisibility(View.VISIBLE);
                 } else {
 
-                    spinner1.setVisibility(View.GONE);
+                    ln.setVisibility(View.GONE);
                 }
 
 
