@@ -14,7 +14,8 @@
         android:focusableInTouchMode="true"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
 
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
