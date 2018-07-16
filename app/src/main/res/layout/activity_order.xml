@@ -5,19 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OrderActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:background="#ffffff"
         android:focusable="true"
-        android:focusableInTouchMode="true">
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="148dp">
+
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/AppTheme.AppBarOverlay"
 
             >
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -26,28 +31,29 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/goback"
-                    android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="20dp"
-                    android:onClick="backToLast"/>
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/goback"
+                    android:onClick="backToLast" />
 
             </LinearLayout>
 
 
         </android.support.design.widget.AppBarLayout>
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#f4f4f4"
-            >
+            android:background="#f4f4f4">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
+                android:layout_margin="10dp"
                 android:background="#ffffff"
                 android:gravity="left"
-                android:layout_margin="10dp"
+                android:orientation="vertical"
                 android:padding="10dp"
 
                 >
@@ -57,107 +63,129 @@
                     android:layout_height="wrap_content"
                     android:text="Chọn Tỉnh/Thành Phố:"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <Spinner
                     android:id="@+id/SpinnerOrder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_marginTop="10dp"
-                    />
+                    android:gravity="center" />
 
                 <TextView
-                    android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" 
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="Tên:"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
                     android:cursorVisible="false"
                     android:hint="nhập tên của bạn"
-                    android:maxLines="1"
                     android:lines="1"
-                    android:singleLine="true"
-                    android:layout_marginBottom="40dp"
-                    />
+                    android:maxLines="1"
+                    android:singleLine="true" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Số Điện Thoại:"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
                     android:cursorVisible="false"
                     android:hint="Nhập số điện thoại"
-                    android:maxLines="1"
                     android:lines="1"
-                    android:singleLine="true"
-                    android:layout_marginBottom="40dp"
-                    />
+                    android:maxLines="1"
+                    android:singleLine="true" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Địa Chỉ:"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
                     android:cursorVisible="false"
                     android:hint="Nhập Địa Chỉ"
-                    android:maxLines="1"
                     android:lines="1"
-                    android:singleLine="true"
-                    android:layout_marginBottom="40dp"
-                    />
+                    android:maxLines="1"
+                    android:singleLine="true" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Loại Hình:"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
                 <!--<Spinner-->
-                    <!--android:id="@+id/Spinner01"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:gravity="left"-->
-                    <!--android:layout_marginBottom="40dp"-->
-                    <!--/>-->
+                <!--android:id="@+id/Spinner01"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="left"-->
+                <!--android:layout_marginBottom="40dp"-->
+                <!--/>-->
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <RadioButton
                         android:id="@+id/rdb1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Đã Chế Biến"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
                         android:textColor="@color/colorPrimaryDark"
-                        />
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
 
                     <RadioButton
                         android:id="@+id/rdb2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Nguyên Liệu"
+                        android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorPrimaryDark"/>
+                        android:textStyle="bold" />
                 </RadioGroup>
 
                 <LinearLayout
-                    android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đơn giá:"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 45.000vnđ / (Phần)"
+                        android:textColor="#9a9a9a"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -166,14 +194,15 @@
                         android:layout_height="wrap_content"
                         android:text="Số Lượng:"
                         android:textSize="20dp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
+
                     <EditText
                         android:layout_width="70dp"
                         android:layout_height="wrap_content"
                         android:cursorVisible="false"
                         android:inputType="number"
-                        android:maxLines="1"
                         android:lines="1"
+                        android:maxLines="1"
                         android:singleLine="true"
 
                         />
@@ -182,33 +211,33 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="(Phần)"
-                        android:textSize="17dp"
                         android:textColor="#9a9a9a"
-                        />
+                        android:textSize="17dp" />
 
                 </LinearLayout>
 
 
-
                 <TextView
-                    android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="Hình Thức Thanh Toán:"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <RadioGroup
                     android:id="@+id/rdbG"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <RadioButton
                         android:id="@+id/rdb3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Nhận Tiền Khi Giao Hàng"
+                        android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
                         android:textStyle="bold"
-                        android:textColor="@color/colorPrimaryDark"
 
                         />
 
@@ -218,103 +247,111 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Thanh Toán Qua Mạng"
+                        android:textColor="@color/colorPrimaryDark"
                         android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorPrimaryDark"/>
+                        android:textStyle="bold" />
                 </RadioGroup>
 
                 <LinearLayout
                     android:id="@+id/lnlayout"
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="30dp"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Chọn Loại Thẻ:"
                             android:textSize="17dp"
-                            android:textStyle="bold"/>
-                <Spinner
-                    android:id="@+id/SpinnerOrder1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_marginTop="5dp"
+                            android:textStyle="bold" />
 
-                    />
+                        <Spinner
+                            android:id="@+id/SpinnerOrder1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+
+                            />
                     </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="30dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Tên Trên Thẻ:"
-                        android:textSize="17dp"
-                        android:textStyle="bold"/>
-                    <EditText
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:cursorVisible="false"
-                        android:hint="Tên người sở hữu"
-                        android:maxLines="1"
-                        android:lines="1"
-                        android:singleLine="true"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp">
 
-                        />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tên Trên Thẻ:"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
 
-                </LinearLayout>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cursorVisible="false"
+                            android:hint="Tên người sở hữu"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:singleLine="true"
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="30dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Số Tài Khoản:"
-                        android:textSize="17dp"
-                        android:textStyle="bold"/>
-                    <EditText
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:cursorVisible="false"
-                        android:hint="Tài khoản thẻ"
-                        android:maxLines="1"
-                        android:lines="1"
-                        android:singleLine="true"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp">
 
-                        />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Số Tài Khoản:"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
 
-                </LinearLayout>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cursorVisible="false"
+                            android:hint="Tài khoản thẻ"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:singleLine="true"
+
+                            />
+
+                    </LinearLayout>
                 </LinearLayout>
 
 
                 <TextView
-                    android:layout_marginTop="30dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="30dp"
                     android:text="*Giao Hàng Miễn Phí Cho Tất Cả Các Hóa Đơn Trên 80.000vnđ"
-                    android:textStyle="bold|italic"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="15dp"
-                    android:layout_marginBottom="40dp"/>
+                    android:textStyle="bold|italic" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginBottom="20dp"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -325,30 +362,29 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Tổng tiền: "
-                            android:textStyle="bold"
-                            android:textSize="20dp"/>
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="nhập tiền vô"/>
+                            android:text="nhập tiền vô" />
 
                     </LinearLayout>
 
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_marginLeft="10dp"
-                    android:padding="5dp"
-                    android:text="Xác Nhận Đơn Hàng"
-                    android:textSize="15dp"
-                    android:textAlignment="center"
-                    android:background="@drawable/roundbutton"
-                    android:textColor="#ffffff"
-                    android:onClick="goToTrackingOrder"
-                    />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/roundbutton"
+                        android:gravity="center"
+                        android:onClick="goToTrackingOrder"
+                        android:padding="5dp"
+                        android:text="Xác Nhận Đơn Hàng"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
                 </LinearLayout>
 
 
