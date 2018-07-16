@@ -39,6 +39,7 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#f4f4f4"
             >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -46,20 +47,37 @@
                 android:orientation="vertical"
                 android:background="#ffffff"
                 android:gravity="left"
-                android:padding="20dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+
                 >
 
                 <TextView
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chọn Tỉnh/Thành Phố:"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <Spinner
+                    android:id="@+id/SpinnerOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content" 
-                    android:text="Name:"
+                    android:text="Tên:"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:cursorVisible="false"
-                    android:hint="Your Name"
+                    android:hint="nhập tên của bạn"
                     android:maxLines="1"
                     android:lines="1"
                     android:singleLine="true"
@@ -69,14 +87,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Phone:"
+                    android:text="Số Điện Thoại:"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:cursorVisible="false"
-                    android:hint="Your Phone Number"
+                    android:hint="Nhập số điện thoại"
                     android:maxLines="1"
                     android:lines="1"
                     android:singleLine="true"
@@ -86,14 +104,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Address:"
+                    android:text="Địa Chỉ:"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:cursorVisible="false"
-                    android:hint="Your Address"
+                    android:hint="Nhập Địa Chỉ"
                     android:maxLines="1"
                     android:lines="1"
                     android:singleLine="true"
@@ -103,7 +121,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Food Type:"
+                    android:text="Loại Hình:"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
                 <!--<Spinner-->
@@ -120,7 +138,7 @@
                         android:id="@+id/rdb1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Cooked (20$ / each)"
+                        android:text="Đã Chế Biến"
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:textColor="@color/colorPrimaryDark"
@@ -130,41 +148,127 @@
                         android:id="@+id/rdb2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Ingredient Only (8$ / each)"
+                        android:text="Nguyên Liệu"
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:textColor="@color/colorPrimaryDark"/>
                 </RadioGroup>
 
-                <TextView
+                <LinearLayout
+                    android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Amount:"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Số Lượng:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="false"
+
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:singleLine="true"
+
+                        />
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hình Thức Thanh Toán:"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
-                <EditText
+                <RadioGroup
+                    android:id="@+id/rdbG"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:cursorVisible="false"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rdb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nhận Tiền Khi Giao Hàng"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
 
-                    android:maxLines="1"
-                    android:lines="1"
-                    android:singleLine="true"
-                    android:layout_marginBottom="40dp"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rdb4"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thanh Toán Qua Mạng"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"/>
+                </RadioGroup>
+
+                <Spinner
+                    android:id="@+id/SpinnerOrder1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+
                     />
 
 
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Giao Hàng Miễn Phí Cho Tất Cả Các Hóa Đơn Trên 80.000vnđ"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="40dp"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
                     android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tổng tiền: "
+                            android:textStyle="bold"
+                            android:textSize="20dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="nhập tiền vô"/>
+
+                    </LinearLayout>
+
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:layout_marginLeft="10dp"
                     android:padding="5dp"
-                    android:text="Submit Order"
+                    android:text="Xác Nhận Đơn Hàng"
                     android:textSize="15dp"
                     android:textAlignment="center"
                     android:background="@drawable/roundbutton"

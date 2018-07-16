@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 
 import java.util.ArrayList;
@@ -22,6 +23,8 @@ public class OrderActivity extends AppCompatActivity {
         setContentView(R.layout.activity_order);
 
         RadioButton rd1 = (RadioButton)findViewById(R.id.rdb1);
+        RadioButton rd3 = (RadioButton)findViewById(R.id.rdb3);
+        RadioButton rd4 = (RadioButton)findViewById(R.id.rdb4);
         rd1.setChecked(true);
 
 //        Spinner spinner = (Spinner) findViewById(R.id.Spinner01);
@@ -35,6 +38,51 @@ public class OrderActivity extends AppCompatActivity {
 //        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 //        spinner.setAdapter(adapter);
 
+        Spinner spinner = (Spinner) findViewById(R.id.SpinnerOrder);
+        Spinner spinner1 = (Spinner) findViewById(R.id.SpinnerOrder1);
+        ArrayAdapter<String> adapter;
+        List<String> list;
+
+        list = new ArrayList<>();
+        list.add("TP. Hồ Chí Minh");
+        list.add("Đà Nẵng");
+        list.add("Huế");
+        list.add("Hà Nội");
+        adapter = new ArrayAdapter<String>(this, R.layout.spinner_item,list);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+        list = new ArrayList<>();
+        list.add("Visa");
+        list.add("MasterCard");
+        adapter = new ArrayAdapter<String>(this, R.layout.spinner_item,list);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner1.setAdapter(adapter);
+
+        rd3.setChecked(true);
+        spinner1.setVisibility(View.GONE);
+
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.rdbG);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                Spinner spinner1 = (Spinner) findViewById(R.id.SpinnerOrder1);
+                RadioButton rd4 = (RadioButton)group.findViewById(checkedId);
+
+
+
+                boolean isChecked = rd4.isChecked();
+                if (isChecked){
+                    spinner1.setVisibility(View.VISIBLE);
+                } else {
+
+                    spinner1.setVisibility(View.GONE);
+                }
+
+
+            }
+        });
 
 
 
